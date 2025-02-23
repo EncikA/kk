@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const addImageToPDF = (index) => {
             if (index >= imageUploads.length) {
-                doc.text("© 2025 by Mohamad Adri bin Maili, SK Stalon", 105, 280, null, null, "center");
+                doc.text("© Sekolah Kebangsaan Stalon", 105, 280, null, null, "center");
                 doc.save("Laporan_Kokurikulum.pdf");
                 return;
             }
