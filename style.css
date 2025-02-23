@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #eef2f7;
     text-align: center;
     margin: 0;
 }
@@ -11,7 +11,7 @@ body {
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
@@ -23,10 +23,12 @@ label {
     display: block;
     margin-top: 10px;
     font-weight: bold;
+    text-align: left;
 }
 
 input[type="text"],
 input[type="date"],
+input[type="time"],
 input[type="number"],
 input[type="file"] {
     width: 100%;
@@ -36,23 +38,16 @@ input[type="file"] {
     border-radius: 5px;
 }
 
-.time-slider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
-}
-
 button {
     background: #28a745;
     color: white;
-    padding: 10px;
+    padding: 12px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
     width: 100%;
+    font-size: 16px;
 }
 
 button:hover {
