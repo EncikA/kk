@@ -23,24 +23,21 @@
             <label for="hari">Hari:</label>
             <input type="text" id="hari" required>
 
-            <label for="masaAktiviti">Masa Aktiviti:</label>
-            <div class="time-slider">
-                <input type="range" id="masaStart" min="0" max="23" step="1">
-                <span id="startTime">12:00 PM</span>
-                hingga
-                <input type="range" id="masaEnd" min="0" max="23" step="1">
-                <span id="endTime">1:00 PM</span>
-            </div>
+            <label for="masaMula">Masa Mula:</label>
+            <input type="time" id="masaMula" required>
+
+            <label for="masaTamat">Masa Tamat:</label>
+            <input type="time" id="masaTamat" required>
 
             <label for="jumlahMurid">Jumlah Kehadiran Murid:</label>
             <input type="number" id="jumlahMurid" required>
 
             <label>Muat Naik Gambar (4 keping):</label>
             <div class="upload-container">
-                <input type="file" accept="image/*">
-                <input type="file" accept="image/*">
-                <input type="file" accept="image/*">
-                <input type="file" accept="image/*">
+                <input type="file" class="image-upload" accept="image/*">
+                <input type="file" class="image-upload" accept="image/*">
+                <input type="file" class="image-upload" accept="image/*">
+                <input type="file" class="image-upload" accept="image/*">
             </div>
 
             <button type="button" id="generatePDF">Jana Laporan</button>
